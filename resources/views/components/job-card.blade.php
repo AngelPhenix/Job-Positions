@@ -8,9 +8,9 @@
 
     <div class="flex justify-between items-center mt-auto">
         <div>
-            <a href="#" class="bg-white/10 hover:bg-white/25 px-2 py-1 rounded-xl text-xs transition-colors duration-300">Tag</a>
-            <a href="#" class="bg-white/10 hover:bg-white/25 px-2 py-1 rounded-xl text-xs transition-colors duration-300">Tag</a>
-            <a href="#" class="bg-white/10 hover:bg-white/25 px-2 py-1 rounded-xl text-xs transition-colors duration-300">Tag</a>
+            <x-tag>Frontend</x-tag>
+            <x-tag>Backend</x-tag>
+            <x-tag>Fullstack</x-tag>
         </div>
         
         <img src="http://placehold.co/42x42" alt="logo" class="rounded-xl">
