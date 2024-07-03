@@ -1,4 +1,4 @@
-<div class="p-4 bg-white/5 rounded-xl flex flex-col text-center border border-transparent hover:border-blue-600 group transition-colors duration-100">
+<x-panel class="flex flex-col text-center">
     <div class="self-start text-sm">GovExec</div>
 
     <div class="py-8">
@@ -15,4 +15,4 @@
         
         <x-employer-logo :width="40"/>
     </div>
-</div>
+</x-panel>

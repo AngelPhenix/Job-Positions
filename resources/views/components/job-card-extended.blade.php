@@ -1,4 +1,4 @@
-<div class="p-4 bg-white/5 rounded-xl flex gap-x-6 border border-transparent hover:border-blue-600 group transition-colors duration-100">
+<x-panel class="flex gap-x-6">
     <div>
         <x-employer-logo />
     </div>
@@ -16,4 +16,4 @@
         <x-tag>Backend</x-tag>
         <x-tag>Fullstack</x-tag>
     </div>
-</div>
+</x-panel>
