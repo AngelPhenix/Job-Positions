@@ -9,9 +9,11 @@ class Job extends Model
 {
     use HasFactory;
 
-    public function tag()
+    public function tag(string $tag_name)
     {
-        
+        $tag = Tag::firstOrCreate(['name' => $tag_name]);
+
+        $this->tags()->attach($tag);
     }
 
     public function tags()
