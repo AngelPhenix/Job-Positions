@@ -9,11 +9,11 @@
         <x-forms.input label="Tags (Comma separated)" name="tags" placeholder="frontend, backend, fullstack, ..." />
 
         <x-forms.select label="Schedule" name="schedule">
-            <option>Part time</option>
-            <option>Full time</option>
+            <option>Part Time</option>
+            <option>Full Time</option>
         </x-forms.select>
 
-        <x-forms.checkbox label="Feature (Costs Extra)" name="featured" />
+        <x-forms.checkbox label="Feature (Costs extra)" name="featured" />
 
         <x-forms.button>Publish</x-forms.button>
     </x-forms.form>
