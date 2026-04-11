@@ -9,42 +9,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="bg-black text-white font-hanken-grotesk pb-10">
+<body class="bg-zinc-950 text-zinc-100 font-hanken-grotesk pb-10">
     <div class="px-10">
-        <nav class="flex justify-between items-center py-4 border-b border-white/10">
+        <nav class="flex justify-between items-center py-4 border-b border-zinc-700/70">
             <div>
                 <a href="/">
                     <img src="{{ Vite::asset('resources/images/logo.svg') }}" alt="logo">
                 </a>
             </div>
-            <div class="space-x-6 font-bold">
-                <a href="#">Jobs</a>
-                <a href="#">Careers</a>
-                <a href="#">Salaries</a>
-                <a href="#">Companies</a>
+            <div class="space-x-6 font-bold text-zinc-300">
+                <a class="hover:text-orange-400 transition-colors duration-150" href="#">Jobs</a>
+                <a class="hover:text-orange-400 transition-colors duration-150" href="#">Careers</a>
+                <a class="hover:text-orange-400 transition-colors duration-150" href="#">Salaries</a>
+                <a class="hover:text-orange-400 transition-colors duration-150" href="#">Companies</a>
             </div>
 
             @auth
-                <div class="space-x-6 font-bold flex">
-                    <a href="/jobs/create">Post a job</a>
+                <div class="space-x-6 font-bold flex text-zinc-300">
+                    <a class="hover:text-orange-400 transition-colors duration-150" href="/jobs/create">Post a job</a>
 
                     <form method="POST" action="/logout">
                         @csrf
                         @method('DELETE')
-                        <button>Log Out</button>
+                        <button class="hover:text-orange-400 transition-colors duration-150">Log Out</button>
                     </form>
                 </div>
             @endauth
 
             @guest()
-                <div class="space-x-6 font-bold">
-                    <a href="/register">Sign Up</a>
-                    <a href="/login">Log In</a>
+                <div class="space-x-6 font-bold text-zinc-300">
+                    <a class="hover:text-orange-400 transition-colors duration-150" href="/register">Sign Up</a>
+                    <a class="hover:text-orange-400 transition-colors duration-150" href="/login">Log In</a>
                 </div>
             @endguest
         </nav>
 
-        <main class="mt-10 max-w-[986px] mx-auto">
+        <main class="mt-10 max-w-[1120px] mx-auto">
             {{ $slot }}
         </main>
 

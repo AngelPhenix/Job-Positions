@@ -18,12 +18,35 @@ class JobController extends Controller
      */
     public function index()
     {
-        $jobs = Job::latest()->with(['employer', 'tags'])->get()->groupBy('featured');
+        $featuredJobs = Job::query()
+            ->where('featured', true)
+            ->latest()
+            ->with(['employer', 'tags'])
+            ->get();
+
+        $recentJobs = Job::query()
+            ->latest()
+            ->with(['employer', 'tags'])
+            ->paginate(15);
 
         return view('jobs.index', [
-            'jobs' =>  $jobs[0],
-            'featuredJobs' => $jobs[1],
+            'jobs' =>  $recentJobs,
+            'featuredJobs' => $featuredJobs,
             'tags' => Tag::all()
+        ]);
+    }
+
+    public function recent(Request $request)
+    {
+        $jobs = Job::query()
+            ->latest()
+            ->with(['employer', 'tags'])
+            ->paginate(15, ['*'], 'page', $request->integer('page', 1));
+
+        return response()->json([
+            'html' => view('jobs.partials.recent-jobs-items', ['jobs' => $jobs])->render(),
+            'hasMorePages' => $jobs->hasMorePages(),
+            'nextPage' => $jobs->currentPage() + 1,
         ]);
     }
 
