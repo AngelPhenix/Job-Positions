@@ -11,7 +11,7 @@ services:
         value: false
       - key: APP_URL
         generateValue: false
-        value: https://job-board.onrender.com
+        value: https://job-positions.onrender.com
       - key: DB_CONNECTION
         value: sqlite
       - key: DB_DATABASE
