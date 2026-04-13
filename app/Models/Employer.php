@@ -10,8 +10,7 @@ class Employer extends Model
     use HasFactory;
 
     protected $fillable = [
-        'name',
-        'logo'
+        'name'
     ];
 
     public function user()

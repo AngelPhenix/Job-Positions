@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Validation\Rules\File;
 use Illuminate\Validation\Rules\Password;
 
 use App\Models\User;
@@ -31,17 +30,13 @@ class RegisteredUserController extends Controller
         ]);
 
         $employerAttributes = $request->validate([
-            'employer' => ['required'],
-            'logo' => ['required', File::types(['png', 'jpg', 'webp'])]
+            'employer' => ['required']
         ]);
 
         $user = User::create($userAttributes);
 
-        $logoPath = $request->logo->store('logos');
-
         $user->employer()->create([
-            'name' => $employerAttributes['employer'],
-            'logo' => $logoPath
+            'name' => $employerAttributes['employer']
         ]);
 
         Auth::login($user);

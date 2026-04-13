@@ -20,8 +20,6 @@ class EmployerFactory extends Factory
     {
         return [
             'name' => fake()->name,
-            // Use a local public asset so seeded logos are always valid.
-            'logo' => 'images/default-employer-logo.svg',
             'user_id' => User::factory()
         ];
     }

@@ -1,10 +1,6 @@
 @props(['job'])
 
 <x-panel class="flex gap-x-6">
-    <div>
-        <x-employer-logo :employer="$job->employer" />
-    </div>
-
     <div class="flex-1 flex flex-col">
         <a href="{{ $job->url }}" class="self-start text-sm text-zinc-400">{{ $job->employer->name }}</a>
 
@@ -15,7 +11,7 @@
         <p class="text-sm text-zinc-400 mt-auto">{{ $job->schedule }} - For {{ str_ends_with($job->salary, '€') ? $job->salary : $job->salary . '€' }}</p>
     </div>
 
-    <div>
+    <div class="self-start">
         @foreach($job->tags as $tag)
         <x-tag :$tag />
         @endforeach

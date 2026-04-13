@@ -10,13 +10,11 @@
         <p class="text-sm mt-4 text-zinc-300">{{ $job->schedule }} - For {{ str_ends_with($job->salary, '€') ? $job->salary : $job->salary . '€' }}</p>
     </div>
 
-    <div class="flex justify-between items-center mt-auto">
+    <div class="flex items-center mt-auto">
         <div>
             @foreach($job->tags as $tag)
             <x-tag :$tag size="small" />
             @endforeach
         </div>
-        
-        <x-employer-logo :employer="$job->employer" />
     </div>
 </x-panel>
