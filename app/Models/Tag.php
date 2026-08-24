@@ -17,4 +17,13 @@ class Tag extends Model
     {
         return $this->belongsToMany(Job::class);
     }
+
+    public function resolveRouteBinding($value, $field = null)
+    {
+        $value = strtolower(trim(urldecode((string) $value)));
+
+        return static::query()
+            ->whereRaw('LOWER(TRIM(name)) = ?', [$value])
+            ->firstOrFail();
+    }
 }

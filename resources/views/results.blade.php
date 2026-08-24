@@ -11,7 +11,7 @@
                 id="show-more-tag-jobs"
                 type="button"
                 data-next-page="{{ $jobs->currentPage() + 1 }}"
-                data-tag-url="{{ url('/tags/' . strtolower($tag->name) . '/jobs') }}"
+                data-tag-url="{{ url('/tags/' . rawurlencode(strtolower(trim($tag->name))) . '/jobs') }}"
                 class="rounded-xl bg-zinc-800 border border-zinc-700 text-zinc-100 hover:bg-orange-500 hover:text-zinc-950 hover:border-orange-500 px-5 py-3 font-bold transition-colors duration-200"
             >
                 Show more

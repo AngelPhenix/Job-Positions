@@ -12,4 +12,4 @@
     }
 @endphp
 
-<a href="/tags/{{strtolower($tag->name) }}" class="{{ $classes }}">{{ $tag->name }}</a>
+<a href="{{ url('/tags/' . rawurlencode(strtolower(trim($tag->name)))) }}" class="{{ $classes }}">{{ $tag->name }}</a>

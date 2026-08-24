@@ -20,9 +20,15 @@ class Job extends Model
 
     public function tag(string $tag_name)
     {
+        $tag_name = strtolower(trim($tag_name));
+
+        if ($tag_name === '') {
+            return;
+        }
+
         $tag = Tag::firstOrCreate(['name' => $tag_name]);
 
-        $this->tags()->attach($tag);
+        $this->tags()->syncWithoutDetaching([$tag->id]);
     }
 
     public function tags()
