@@ -15,13 +15,20 @@ class JobSeeder extends Seeder
      */
     public function run(): void
     {
-        $tags = Tag::factory(3)->create();
-        Job::factory(20)->hasAttached($tags)->create(new Sequence([
-            'featured' => false,
-            'schedule' => 'Full Time'
-        ], [
-            'featured' => true,
-            'schedule' => 'Part Time'
-        ]));
+        $tagNames = ['PHP', 'Laravel', 'Vue.js', 'DevOps', 'Remote', 'Symfony', 'Docker'];
+
+        $tags = collect($tagNames)->map(function ($name) {
+            return Tag::firstOrCreate(['name' => $name]);
+        });
+
+        Job::factory(20)
+            ->hasAttached($tags->random(2)) // Attache 2 tags aléatoires parmi la liste à chaque job
+            ->create(new Sequence([
+                'featured' => false,
+                'schedule' => 'Full Time'
+            ], [
+                'featured' => true,
+                'schedule' => 'Part Time'
+            ]));
     }
 }

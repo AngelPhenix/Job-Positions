@@ -13,13 +13,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
-
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
-
-        $this->call(JobSeeder::class);
+        if (Job::count() === 0) {
+            $this->call([
+                JobSeeder::class,
+            ]);
+        }
     }
 }
