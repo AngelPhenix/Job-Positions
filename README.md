@@ -47,6 +47,31 @@ Test the application directly here: **[https://job-positions-ytuh.onrender.com/]
 
 ---
 
+## 🚀 You want to tweak things yourself and make it your own? (Local Development)
+
+If you want to run this application locally for testing or development purposes, follow these steps:
+
+### Prerequisites
+Make sure you have the following tools installed on your machine:
+* [Laravel Herd](https://herd.laravel.com/) (recommended local environment for PHP/Laravel)
+* [Composer](https://getcomposer.org/) (for PHP dependency management)
+* [Node.js & npm](https://nodejs.org/) (required for frontend asset compilation)
+
+### Installation Steps
+
+You can set up the project either automatically using the provided script or manually.
+I made a script to automate the process but you're free to open the .bat file and enter the commands yourself.
+
+#### Automatic Setup (Recommended for Windows)
+At the root of your project, simply run the setup script:
+```bash
+setup.bat
+```
+
+After everything's executed and installed, you can open Laravel Herd, "Add a Site", select the folder and it should be ready for use.
+
+---
+
 ## 👤 Author
 
 **Jérémy Mattausch**
