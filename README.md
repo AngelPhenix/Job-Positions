@@ -1,6 +1,6 @@
-# 🚀 JobFinder - Plateforme d'Offres d'Emploi
+# 🚀 JobFinder - Job Board Platform
 
-> Une application web moderne développée avec Laravel pour centraliser et rechercher des offres d'emploi, avec un accès direct vers les sites des recruteurs.
+> A modern web application built with Laravel to centralize and search for job offers, featuring direct redirection to recruiters' official websites.
 
 [![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com)
 [![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net)
@@ -9,45 +9,47 @@
 
 ---
 
-## 🌐 Démo en ligne
-Teste l'application directement ici : **[https://job-positions-ytuh.onrender.com/](https://job-positions-ytuh.onrender.com/)**
+## 🌐 Live Demo
+Test the application directly here: **[https://job-positions-ytuh.onrender.com/](https://job-positions-ytuh.onrender.com/)**
 
 ---
 
-## 📸 Aperçu
-*(Ajoute ici une capture d'écran de ton application en action !)*
-<!-- ![Screenshot of the app](public/images/screenshot.png) -->
+## 📸 Preview
+![Home Page](https://raw.githubusercontent.com/AngelPhenix/Job-Positions/gh-pages/gh-images/sc01.png)
+![Job Listing](https://raw.githubusercontent.com/AngelPhenix/Job-Positions/gh-pages/gh-images/sc02.png)
+![Job Posting](https://raw.githubusercontent.com/AngelPhenix/Job-Positions/gh-pages/gh-images/sc03.png)
 
 ---
 
-## ✨ Fonctionnalités principales
+## ✨ Main Features
 
-- **Système d'authentification :** Inscription, connexion et gestion de compte sécurisée.
-- **Recherche par tags :** Filtre les offres instantanément par technologies ou mots-clés (ex: `PHP`, `Laravel`, etc.).
-- **Redirection externe :** Chaque offre propose un lien direct menant vers le site web officiel du recruteur pour postuler.
-- **Publication d'offres :** Espace dédié pour ajouter et gérer des offres d'emploi.
-
----
-
-## 🛠️ Stack Technique
-
-- **Backend :** PHP / Laravel
-- **Base de données :** MySQL
-- **Hébergement :** Render
+- **Authentication System:** Secure user registration, login, and account management.
+- **Tag-based Search:** Instantly filter job offers by technologies or keywords (e.g., `PHP`, `Laravel`, etc.).
+- **External Redirection:** Each job post includes a direct link leading to the recruiter's official website to apply.
+- **Job Posting:** Dedicated space to add and manage job offers.
 
 ---
 
-## 📋 Todo / Prochaines étapes
+## 🛠️ Tech Stack
 
-- [ ] **Identité visuelle :** Remplacer l'icône / le logo du site par défaut.
-- [ ] **Titres des pages :** Mettre à jour le titre de l'onglet de la web app.
-- [ ] **Pages annexes :** Gérer ou nettoyer les pages "Jobs", "Careers", "Salaries" et "Companies" (les remplir ou supprimer le superflu).
-- [ ] **Gestion des tags :** Restreindre l'ajout de tags à une liste prédéfinie pour éviter les fautes de frappe ou les doublons créés par les utilisateurs sur la page principale.
+- **Backend:** PHP / Laravel
+- **Database:** MySQL
+- **Hosting:** Render
 
 ---
 
-## 👤 Auteur
+## 📋 Todo / Roadmap
 
-**Ton Prénom / Ton Nom**
-- GitHub : [@AngelPhenix](https://github.com/AngelPhenix)
-- LinkedIn : [Jérémy Mattausch](https://www.linkedin.com/in/jeremy-mattausch/)
+- [ ] **Visual Identity:** Replace the default site icon and logo.
+- [ ] **Page Titles:** Update the web app tab title.
+- [ ] **Additional Pages:** Handle or clean up secondary pages ("Jobs", "Careers", "Salaries", and "Companies").
+- [ ] **Tag Management:** Restrict tag creation to a predefined list to prevent typos or duplicates on the main page.
+
+---
+
+## 👤 Author
+
+**Jérémy Mattausch**
+- GitHub: [@AngelPhenix](https://github.com/AngelPhenix)
+- LinkedIn: [Jérémy Mattausch](https://www.linkedin.com/in/jeremy-mattausch/)
+- Year: 2026
