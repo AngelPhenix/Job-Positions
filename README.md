@@ -40,8 +40,8 @@ Test the application directly here: **[https://job-positions-ytuh.onrender.com/]
 
 ## 📋 Todo / Roadmap
 
-- [ ] **Visual Identity:** Replace the default site icon and logo.
-- [ ] **Page Titles:** Update the web app tab title.
+- [x] **Visual Identity:** Replace the default site icon and logo.
+- [x] **Page Titles:** Update the web app tab title.
 - [ ] **Additional Pages:** Handle or clean up secondary pages ("Jobs", "Careers", "Salaries", and "Companies").
 - [ ] **Tag Management:** Restrict tag creation to a predefined list to prevent typos or duplicates on the main page.
 
