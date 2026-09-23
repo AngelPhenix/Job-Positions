@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 100" width="120" height="38">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 100" width="160" height="42">
   <style>
     .text-title {
       font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
       font-weight: 700;
-      font-size: 32px;
+      font-size: 48px;
       fill: #ffffff;
       dominant-baseline: middle;
     }
@@ -25,5 +25,5 @@
   </g>
 
   <!-- Texte du Logo -->
-  <text x="105" y="52" class="text-title">Job Positions</text>
+  <text x="100" y="60" class="text-title">Job Positions</text>
 </svg>
