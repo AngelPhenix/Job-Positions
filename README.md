@@ -15,9 +15,9 @@ Test the application directly here: **[https://job-positions-ytuh.onrender.com/]
 ---
 
 ## 📸 Preview
-![Home Page](https://raw.githubusercontent.com/AngelPhenix/Job-Positions/gh-pages/gh-images/sc01.png)
-![Job Listing](https://raw.githubusercontent.com/AngelPhenix/Job-Positions/gh-pages/gh-images/sc02.png)
-![Job Posting](https://raw.githubusercontent.com/AngelPhenix/Job-Positions/gh-pages/gh-images/sc03.png)
+![Home Page]https://raw.githubusercontent.com/AngelPhenix/Job-Positions/refs/heads/main/gh-images/sc01.png)
+![Job Listing](https://raw.githubusercontent.com/AngelPhenix/Job-Positions/refs/heads/main/gh-images/sc02.png)
+![Job Posting](https://raw.githubusercontent.com/AngelPhenix/Job-Positions/refs/heads/main/gh-images/sc03.png)
 
 ---
 
