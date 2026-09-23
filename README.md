@@ -69,6 +69,11 @@ setup.bat
 ```
 
 After everything's executed and installed, you can open Laravel Herd, "Add a Site", select the folder and it should be ready for use.
+Don't forget to get into the folder and run the command 
+```bash
+npm run dev
+```
+Whenever you want to start coding/modifying files.
 
 ---
 
